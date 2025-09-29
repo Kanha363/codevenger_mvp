@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alumni Donation</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #EFEBE9;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .donation-container {
+      background-color: whitesmoke;
+      border: 2px solid #392823;
+      border-radius: 12px;
+      padding: 30px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .donation-container h2 {
+      color: #392823;
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 24px;
+    }
+
+    .donation-form label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      color: #392823;
+      font-weight: 600;
+    }
+
+    .donation-form input,
+    .donation-form select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #c2a68d;
+      border-radius: 6px;
+      background-color: white;
+      color: #392823;
+      font-size: 14px;
+      transition: border-color 0.3s ease;
+    }
+
+    .donation-form input:focus,
+    .donation-form select:focus {
+      border-color: #8b5e3c;
+      outline: none;
+    }
+
+    .donation-form button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 12px;
+      background-color: #3E2723;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .donation-form button:hover {
+      background-color: #3E2723;
+    }
+
+    @media (max-width: 480px) {
+      .donation-container {
+        padding: 20px;
+      }
+
+      .donation-container h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="donation-container">
+    <h2>Support Your Institution</h2>
+    <form class="donation-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+      <label for="amount">Donation Amount (₹)</label>
+      <input type="number" id="amount" name="amount" min="100" required />
+
+      <button type="submit">Donate Now</button>
+    </form>
+  </div>
+</body>
+</html>

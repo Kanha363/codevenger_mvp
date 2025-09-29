@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Connect | Portal Access</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* 1. COLOR PALETTE & GLOBAL STYLES */
+        :root {
+            --color-primary: #5D4037;         /* Rich Brown */
+            --color-secondary: #A1887F;        /* Lighter Brown/Taupe */
+            --color-accent: #FFC107;           /* Golden/Mustard Yellow */
+            --color-background: #F8F7F3;      /* Off-White/Cream */
+            --color-text-dark: #3E2723;       /* Darker Brown/Near Black */
+            --color-text-light: #FFFFFF;
+            --color-light-bg: #EFEBE9;         /* Lightest Brown */
+            --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: var(--color-text-dark); background-color: var(--color-background); }
+        .btn { padding: 10px 20px; border-radius: 5px; font-weight: 600; cursor: pointer; border: 2px solid transparent; transition: all 0.3s ease; }
+        .btn-primary { background-color: var(--color-primary); color: var(--color-text-light) !important; border-color: var(--color-primary); box-shadow: 0 4px 6px rgba(93, 64, 55, 0.4); }
+        .btn-primary:hover { opacity: 0.9; }
+
+        /* 2. PAGE LAYOUT */
+        .auth-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            background-color: var(--color-light-bg);
+        }
+        
+        .auth-box {
+            background-color: var(--color-text-light);
+            width: 100%;
+            max-width: 450px; 
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: var(--shadow-light);
+            text-align: center;
+        }
+
+        .auth-box h2 {
+            color: var(--color-primary);
+            margin-bottom: 30px;
+        }
+
+        /* 3. TAB NAVIGATION (Panel Switching) */
+        .tab-nav {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 25px;
+            border-bottom: 2px solid var(--color-light-bg);
+        }
+
+        .tab-btn {
+            background: none;
+            border: none;
+            padding: 15px 5px; /* Reduced padding for 3 buttons */
+            font-size: 0.95rem; 
+            font-weight: 600;
+            color:;
+            cursor: pointer;
+            transition: color 0.3s, border-bottom 0.3s;
+            flex-grow: 1;
+        }
+
+        .tab-btn.active {
+            color: var(--color-primary);
+            border-bottom: 3px solid var(--color-accent); /* Golden Highlight */
+        }
+        
+        /* 4. FORM STYLING */
+        .auth-form input, .auth-form select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid var(--color-light-bg);
+            border-radius: 5px;
+            font-size: 1rem;
+            color: var(--color-text-dark);
+        }
+
+        .auth-form input[type="submit"] {
+            margin-top: 20px;
+        }
+
+        /* Hide panels initially */
+        .panel {
+            display: none;
+            text-align: left;
+        }
+        
+        .mandatory-note {
+            font-size: 0.85rem;
+            color: var(--color-secondary);
+            text-align: right;
+            margin-top: -10px;
+            margin-bottom: 15px;
+        }
+      .center-me {
+        display: flex;
+       justify-content: center;
+   padding: 6px;
+}
+.center-me-button{
+    width: 50%;
+    margin: 0 auto; /* इससे <p> टैग खुद स्क्रीन के बीच में आ जाएगा */
+    text-align: center; /* इसके अंदर का टेक्स्ट बीच में आ जाएगा */
+    border: 2px dashed rgb(108, 12, 12);
+}
+    </style>
+</head>
+<body>
+
+    <div class="auth-container">
+        <div class="auth-box">
+            <h2>Portal Access & Registration</h2>
+
+            <div class="tab-nav">
+                <button class="tab-btn active" onclick="showPanel('alumni', this)">Alumni Access</button>
+                <button class="tab-btn" onclick="showPanel('student', this)">Student Access</button>
+                <button class="tab-btn" onclick="showPanel('admin', this)">Admin Login</button>
+            </div>
+
+            <div id="alumni-panel" class="panel" style="display: block;">
+                <form class="auth-form">
+                    <p style="margin-bottom: 15px; font-weight: 500;">Alumni Registration / Login</p>
+                       <input type="text" placeholder="Full Name" >
+                    <input type="text" placeholder="Enrollment ID /Appar ID" >
+                                      <p class="center-me">
+                       <button>Or</button>
+                  </p>
+                    <input type="email" placeholder="Email Address (Login)" >
+                    <input type="password" placeholder="Password" >
+                    <p class="mandatory-note">Appar ID is required for Alumni verification.</p>
+                    
+                    <input type="submit" value="Login / Register" class="btn btn-primary">
+                </form>
+            </div>
+
+            <div id="student-panel" class="panel">
+                <form class="auth-form">
+                    <p style="margin-bottom: 15px; font-weight: 500;">Current Student Registration / Login</p>
+                    
+                    <input type="email" placeholder="Institute Email (Login)" required>
+                    <input type="password" placeholder="Password" required>
+                    <p class="center-me">
+                       <button>Or</button>
+                  </p>
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" placeholder="Enrollment ID" required>
+                    
+                    <input type="submit" value="Login / Register" class="btn btn-primary">
+                </form>
+            </div>
+            
+            <div id="admin-panel" class="panel">
+                <form class="auth-form">
+                    <p style="margin-bottom: 15px; font-weight: 500;">Secure Access for Administrators</p>
+                    
+                    <input type="text" placeholder="Admin Username / ID" required>
+                    <input type="password" placeholder="Password" required>
+                    
+                    <input type="submit" value="Admin Login" class="btn btn-primary">
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // Function to switch between the three main panels
+        function showPanel(panelId, clickedButton) {
+            // 1. Hide all panels
+            document.querySelectorAll('.panel').forEach(panel => {
+                panel.style.display = 'none';
+            });
+
+            // 2. Remove 'active' class from all buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // 3. Show the selected panel
+            const selectedPanel = document.getElementById(panelId + '-panel');
+            if (selectedPanel) {
+                selectedPanel.style.display = 'block';
+            }
+
+            // 4. Add 'active' class to the clicked button
+            clickedButton.classList.add('active');
+        }
+
+        // Initialize on load: Ensure the Alumni panel is active on first load
+        window.onload = function() {
+            document.querySelector('#alumni-panel').style.display = 'block';
+            document.querySelector('.tab-nav button:first-child').classList.add('active');
+        };
+    </script>
+</body>
+</html>

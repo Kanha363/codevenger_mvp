@@ -1,0 +1,128 @@
+[
+  {
+    "id": "ajit",
+    "name": "Ajit Reddy",
+    "Profile_image": "ajit.jpg",
+    "tagline": "Eager to explore roles in core electronics and embedded systems. Seeking industrial contacts.",
+    "major": "Electronics and Communication",
+    "degree": "B.Tech",
+    "current_year": "2nd Year",
+    "expected_graduation": "2028",
+    "city": "Bengaluru",
+    "country": "India",
+    "about": "Ajit is building a foundation in hardware design and microcontrollers. He aims for a career in the semiconductor industry and is looking for advice on specialized courses.",
+    "skills": [
+      { "name": "C", "proficiency": "Advanced" },
+      { "name": "Microcontrollers", "proficiency": "Intermediate" },
+      { "name": "Circuit Design", "proficiency": "Intermediate" }
+    ],
+    "seeking_help": true,
+    "help_topics": ["Core Electronics Industry", "Internship Search", "Interview Tips"],
+    "linkedin": "https://linkedin.com/in/ajit-reddy-student"
+  },
+  {
+    "id": "neha",
+    "name": "Neha Patel",
+    "Profile_image": "shruti.jpg",
+    "tagline": "Civil engineer with a focus on sustainable infrastructure and project management.",
+    "major": "Civil Engineering",
+    "degree": "B.Tech",
+    "current_year": "4th Year",
+    "expected_graduation": "2026",
+    "city": "Pune",
+    "country": "India",
+    "about": "Neha is a proactive student specializing in structural analysis software. She is looking for internship opportunities in large construction or consulting firms.",
+    "skills": [
+      { "name": "AutoCAD", "proficiency": "Expert" },
+      { "name": "STAAD Pro", "proficiency": "Advanced" },
+      { "name": "Project Management", "proficiency": "Intermediate" }
+    ],
+    "seeking_help": true,
+    "help_topics": ["Civil Engineering Placements", "Industry Networking", "PE Exam Guidance"],
+    "linkedin": "https://linkedin.com/in/neha-patel-civil"
+  },
+  {
+    "id": "deepak",
+    "name": "Deepak Singh",
+    "Profile_image": "Rahul_profile.jpg",
+    "tagline": "Mechanical engineer specializing in Robotics and CAD/CAM systems.",
+    "major": "Mechanical Engineering",
+    "degree": "B.Tech",
+    "current_year": "3rd Year",
+    "expected_graduation": "2027",
+    "city": "Chennai",
+    "country": "India",
+    "about": "Deepak is leading the college robotics team and has hands-on experience with embedded systems. He is open to discussing innovative product design ideas.",
+    "skills": [
+      { "name": "SolidWorks", "proficiency": "Expert" },
+      { "name": "Robotics", "proficiency": "Advanced" },
+      { "name": "C++", "proficiency": "Intermediate" }
+    ],
+    "seeking_help": false,
+    "help_topics": [],
+    "linkedin": "https://linkedin.com/in/deepak-singh-mech"
+  },
+  {
+    "id": "isha",
+    "name": "Isha Varma",
+    "Profile_image": "isha_profile.jpg",
+    "tagline": "First-year student exploring Computer Science and its intersection with finance (FinTech).",
+    "major": "Computer Science",
+    "degree": "B.Tech",
+    "current_year": "1st Year",
+    "expected_graduation": "2029",
+    "city": "Delhi",
+    "country": "India",
+    "about": "Isha is just starting her journey, focused on strong foundational programming skills and understanding the career landscape in high-growth technology sectors like FinTech.",
+    "skills": [
+      { "name": "Python", "proficiency": "Intermediate" },
+      { "name": "C", "proficiency": "Intermediate" },
+      { "name": "Public Speaking", "proficiency": "Advanced" }
+    ],
+    "seeking_help": true,
+    "help_topics": ["Curriculum Planning", "FinTech Industry Overview", "Soft Skill Development"],
+    "linkedin": "https://linkedin.com/in/isha-varma-student"
+  },
+  {
+    "id": "rahul",
+    "name": "Rahul Khanna",
+    "Profile_image":"vivek.jpg",
+    "tagline": "Electronics student with a keen interest in telecommunications and 5G technology.",
+    "major": "Electronics and Communication",
+    "degree": "B.Tech",
+    "current_year": "4th Year",
+    "expected_graduation": "2026",
+    "city": "Noida",
+    "country": "India",
+    "about": "Rahul completed a summer project on signal processing and is looking to join a large telecom or semiconductor firm post-graduation. He is focused on core job interviews.",
+    "skills": [
+      { "name": "Signal Processing", "proficiency": "Advanced" },
+      { "name": "MATLAB", "proficiency": "Advanced" },
+      { "name": "Verilog/VHDL", "proficiency": "Intermediate" }
+    ],
+    "seeking_help": true,
+    "help_topics": ["Core Job Interviews", "Resume Review", "Telecom Sector Trends"],
+    "linkedin": "https://linkedin.com/in/rahul-khanna-student"
+  },
+  {
+    "id": "samira",
+    "name": "Samira Khan",
+    "Profile_image": "neha.jpg",
+    "tagline": "Information Technology student exploring UI/UX design and Frontend development.",
+    "major": "Information Technology",
+    "degree": "B.Tech",
+    "current_year": "3rd Year",
+    "expected_graduation": "2027",
+    "city": "Hyderabad",
+    "country": "India",
+    "about": "Samira is a self-taught designer and developer, skilled in modern frontend frameworks. She is building a portfolio of web applications and seeking feedback from design experts.",
+    "skills": [
+      { "name": "React", "proficiency": "Advanced" },
+      { "name": "Figma", "proficiency": "Expert" },
+      { "name": "User Research", "proficiency": "Intermediate" }
+    ],
+    "seeking_help": true,
+    "help_topics": ["UI/UX Portfolio Critique", "Frontend Career Path", "Design System Implementation"],
+    "linkedin": "https://linkedin.com/in/samira-khan-dev"
+  }
+]

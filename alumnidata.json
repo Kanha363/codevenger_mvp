@@ -1,0 +1,360 @@
+[
+  {
+    "id": "kunal",
+    "name": "Kunal Sharma",
+    "Profile_image": "sih_img.jpg",
+    "tagline": "Building scalable infrastructure that powers search results. Always open to mentorship.",
+    "is_verified": true,
+    "designation": "Senior Software Engineer, Google",
+    "batch": "2015",
+    "degree": "B.Tech",
+    "major": "Computer Science",
+    "city": "Mountain View",
+    "country": "USA",
+    "about": "Kunal is a seasoned engineer specializing in distributed systems and backend optimization. He thrives on technical challenges and contributing to open-source projects.",
+    "experience": [
+      {
+        "title": "Senior Software Engineer",
+        "company": "Google",
+        "duration": "Aug 2018 - Present",
+        "location": "Mountain View, USA",
+        "description": "Led the overhaul of the monitoring system, reducing incident response time by 40%."
+      },
+      {
+        "title": "Software Engineer",
+        "company": "Google",
+        "duration": "Jul 2015 - Aug 2018",
+        "location": "Hyderabad, India",
+        "description": "Developed internal tools for automating deployment pipelines."
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.Tech",
+        "major": "Computer Science",
+        "institution": "Your University Name",
+        "duration": "2011 - 2015",
+        "grade": "8.5 CGPA",
+        "thesis_title": "Scalable Data Replication using Blockchain"
+      }
+    ],
+    "skills": [
+      { "name": "Python", "proficiency": "Expert" },
+      { "name": "Kubernetes", "proficiency": "Advanced" },
+      { "name": "AWS", "proficiency": "Intermediate" },
+      { "name": "Distributed Systems", "proficiency": "Expert" }
+    ],
+    "projects": [
+      {
+        "title": "Alumni Mentorship Platform",
+        "year": "2023",
+        "link": "https://github.com/...",
+        "description": "Developed the backend using Node.js and MongoDB."
+      },
+      {
+        "title": "Real-Time Geo-Tracking",
+        "year": "2015",
+        "link": "https://github.com/...",
+        "description": "Final year project using GPS and cellular triangulation."
+      }
+    ],
+    "mentorship_available": true,
+    "mentor_topics": ["Career Path", "Interview Prep", "Cloud Technologies"],
+    "linkedin": "https://linkedin.com/in/kunal-sharma-google"
+  },
+  {
+    "id": "anjali",
+    "name": "Anjali Singh",
+    "Profile_image": "shruti.jpg",
+    "tagline": "Building scalable infrastructure that powers search results. Always open to mentorship.",
+    "is_verified": true,
+    "designation": "Senior Data Engineer, Amazon",
+    "batch": "2014",
+    "degree": "B.Tech",
+    "major": "Computer Science",
+    "city": "Delhi",
+    "country": "India",
+    "about": "Anjali is a Data engineer specializing in distributed systems and backend optimization. She thrives on technical challenges and contributing to open-source projects.",
+    "experience": [
+      {
+        "title": "Senior Data Engineer",
+        "company": "Amazon",
+        "duration": "Aug 2020 - Present",
+        "location": "Delhi, India",
+        "description": "Led the overhaul of the monitoring system, reducing incident response time by 40%."
+      },
+      {
+        "title": "Software Engineer",
+        "company": "Google",
+        "duration": "Jul 2015 - Aug 2018",
+        "location": "Hyderabad, India",
+        "description": "Developed internal tools for automating deployment pipelines."
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.Tech",
+        "major": "Computer Science",
+        "institution": "Your University Name",
+        "duration": "2011 - 2015",
+        "grade": "8.5 CGPA",
+        "thesis_title": "Scalable Data Replication using Blockchain"
+      },
+      {
+        "degree": "Intermediate (12th)",
+        "major": "N/A",
+        "institution": "Radhey krishna Intermidiate College",
+        "duration": "2010 - 2011",
+        "grade": "8.8 CGPA"
+      }
+    ],
+    "skills": [
+      { "name": "C++", "proficiency": "Expert" },
+      { "name": "Web Development", "proficiency": "Advanced" },
+      { "name": "AWS", "proficiency": "Intermediate" },
+      { "name": "Distributed Systems", "proficiency": "Expert" }
+    ],
+    "projects": [
+      {
+        "title": "Alumni Mentorship Platform",
+        "year": "2023",
+        "link": "https://github.com/...",
+        "description": "Developed the backend using Node.js and MongoDB."
+      }
+    ],
+    "mentorship_available": true,
+    "mentor_topics": ["Career Path", "Interview Prep", "Cloud Technologies"],
+    "linkedin": "https://linkedin.com/in/Anjali-Singh-google"
+  },
+  {
+    "id": "rohan",
+    "name": "Rohan Verma",
+    "Profile_image": "generative-ai-image-indian-businessman-with-happy-expression-office_467541-8174.jpg",
+    "tagline": "Bridging technology and user needs to launch impactful products. Happy to discuss tech-to-PM transition.",
+    "is_verified": true,
+    "designation": "Product Manager, Microsoft",
+    "batch": "2013",
+    "degree": "B.Tech",
+    "major": "Electrical Engineering",
+    "city": "Seattle",
+    "country": "USA",
+    "about": "Rohan transitioned from engineering to product management. He focuses on AI/ML applications in cloud services and is passionate about user-centric design.",
+    "experience": [
+      {
+        "title": "Product Manager",
+        "company": "Microsoft",
+        "duration": "Jan 2019 - Present",
+        "location": "Seattle, USA",
+        "description": "Launched a new suite of AI tools for Azure customers, driving a 15% increase in adoption."
+      },
+      {
+        "title": "Software Engineer",
+        "company": "Cisco",
+        "duration": "Jul 2013 - Dec 2018",
+        "location": "Bengaluru, India",
+        "description": "Optimized network routing algorithms, improving system latency by 10%."
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.Tech",
+        "major": "Electrical Engineering",
+        "institution": "Your University Name",
+        "duration": "2009 - 2013",
+        "grade": "7.9 CGPA",
+        "thesis_title": "Smart Grid Load Balancing System"
+      }
+    ],
+    "skills": [
+      { "name": "Product Management", "proficiency": "Expert" },
+      { "name": "Agile Methodologies", "proficiency": "Advanced" },
+      { "name": "Market Research", "proficiency": "Intermediate" },
+      { "name": "Python", "proficiency": "Intermediate" }
+    ],
+    "projects": [
+      {
+        "title": "AI Feature Prioritization Model",
+        "year": "2022",
+        "link": "N/A",
+        "description": "Internal tool to prioritize feature development based on predicted customer value."
+      }
+    ],
+    "mentorship_available": true,
+    "mentor_topics": ["Product Management", "Career Transition", "Design Thinking"],
+    "linkedin": "https://linkedin.com/in/rohan-verma-pm"
+  },
+  {
+    "id": "priya",
+    "name": "Priya Rao",
+    "Profile_image": "neha.jpg",
+    "tagline": "Creating intuitive and beautiful digital experiences. Always focusing on accessibility.",
+    "is_verified": true,
+    "designation": "Lead UI/UX Designer, Adobe",
+    "batch": "2017",
+    "degree": "B.Tech",
+    "major": "Information Technology",
+    "city": "San Francisco",
+    "country": "USA",
+    "about": "Priya is an award-winning designer with a deep understanding of human-computer interaction. She mentors students on building professional design portfolios.",
+    "experience": [
+      {
+        "title": "Lead UI/UX Designer",
+        "company": "Adobe",
+        "duration": "Sep 2020 - Present",
+        "location": "San Francisco, USA",
+        "description": "Redesigned the core application interface, resulting in a 25% improvement in user task completion rates."
+      },
+      {
+        "title": "UI Designer",
+        "company": "Salesforce",
+        "duration": "Aug 2017 - Aug 2020",
+        "location": "New York, USA",
+        "description": "Contributed to the design system for enterprise products."
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.Tech",
+        "major": "Information Technology",
+        "institution": "Your University Name",
+        "duration": "2013 - 2017",
+        "grade": "9.1 CGPA",
+        "thesis_title": "Design Principles for Accessible Mobile Interfaces"
+      }
+    ],
+    "skills": [
+      { "name": "Figma", "proficiency": "Expert" },
+      { "name": "UI/UX Design", "proficiency": "Expert" },
+      { "name": "Prototyping", "proficiency": "Advanced" },
+      { "name": "Accessibility Standards", "proficiency": "Advanced" }
+    ],
+    "projects": [
+      {
+        "title": "Design System for Alumni Portal",
+        "year": "2023",
+        "link": "https://dribbble.com/...",
+        "description": "A comprehensive design system to ensure brand consistency."
+      }
+    ],
+    "mentorship_available": true,
+    "mentor_topics": ["Portfolio Review", "Design Careers", "Figma/Sketch"],
+    "linkedin": "https://linkedin.com/in/priya-rao-design"
+  },
+  {
+    "id": "vivek",
+    "name": "Vivek Mehra",
+    "Profile_image": "vivek.jpg",
+    "tagline": "Decoding market trends and building quantitative trading models. Open to discussing FinTech careers.",
+    "is_verified": true,
+    "designation": "Financial Analyst, Goldman Sachs",
+    "batch": "2016",
+    "degree": "B.Tech",
+    "major": "Mechanical Engineering",
+    "city": "Mumbai",
+    "country": "India",
+    "about": "Vivek transitioned from an engineering background into finance, leveraging his analytical skills. He specializes in risk management and quantitative analysis.",
+    "experience": [
+      {
+        "title": "Financial Analyst",
+        "company": "Goldman Sachs",
+        "duration": "Jun 2017 - Present",
+        "location": "Mumbai, India",
+        "description": "Developed a new risk assessment model that saved the firm an estimated $5M annually."
+      },
+      {
+        "title": "Design Engineer",
+        "company": "TATA Motors",
+        "duration": "Jul 2016 - May 2017",
+        "location": "Pune, India",
+        "description": "Optimized a key component design, reducing material costs by 8%."
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.Tech",
+        "major": "Mechanical Engineering",
+        "institution": "Your University Name",
+        "duration": "2012 - 2016",
+        "grade": "8.2 CGPA",
+        "thesis_title": "CFD Analysis of Heat Exchanger Efficiency"
+      }
+    ],
+    "skills": [
+      { "name": "Quantitative Analysis", "proficiency": "Expert" },
+      { "name": "R/Matlab", "proficiency": "Advanced" },
+      { "name": "Financial Modeling", "proficiency": "Advanced" },
+      { "name": "Data Visualization", "proficiency": "Intermediate" }
+    ],
+    "projects": [
+      {
+        "title": "Algorithmic Trading Bot",
+        "year": "2016",
+        "link": "https://github.com/...",
+        "description": "A personal project using Python to execute trades based on moving averages."
+      }
+    ],
+    "mentorship_available": true,
+    "mentor_topics": ["FinTech Careers", "Financial Analysis", "Risk Management"],
+    "linkedin": "https://linkedin.com/in/vivek-mehra-finance"
+  },
+  {
+    "id": "shruti",
+    "name": "Shruti Gupta",
+    "Profile_image": "shruti_profile.jpg",
+    "tagline": "Leading high-performance teams to deliver mission-critical e-commerce infrastructure.",
+    "is_verified": true,
+    "designation": "Tech Lead, Flipkart",
+    "batch": "2012",
+    "degree": "B.Tech",
+    "major": "Electronics and Communication",
+    "city": "Bengaluru",
+    "country": "India",
+    "about": "Shruti is a backend veteran with expertise in large-scale e-commerce platforms, system architecture, and performance tuning. She is focused on mentoring future leaders.",
+    "experience": [
+      {
+        "title": "Tech Lead",
+        "company": "Flipkart",
+        "duration": "Mar 2017 - Present",
+        "location": "Bengaluru, India",
+        "description": "Scaled the checkout service to handle 5x peak traffic during major sale events with zero downtime."
+      },
+      {
+        "title": "Senior Software Engineer",
+        "company": "Wipro",
+        "duration": "Jul 2012 - Feb 2017",
+        "location": "Hyderabad, India",
+        "description": "Developed enterprise solutions for telecom clients."
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.Tech",
+        "major": "Electronics and Communication",
+        "institution": "Your University Name",
+        "duration": "2008 - 2012",
+        "grade": "8.8 CGPA",
+        "thesis_title": "Wireless Sensor Network Optimization"
+      }
+    ],
+    "skills": [
+      { "name": "Java/Spring", "proficiency": "Expert" },
+      { "name": "System Design", "proficiency": "Expert" },
+      { "name": "Kafka", "proficiency": "Advanced" },
+      { "name": "Microservices", "proficiency": "Advanced" }
+    ],
+    "projects": [
+      {
+        "title": "Distributed Cache System",
+        "year": "2021",
+        "link": "N/A",
+        "description": "Designed and implemented a distributed caching layer for e-commerce catalog."
+      }
+    ],
+    "mentorship_available": true,
+    "mentor_topics": ["System Design Interviews", "Team Leadership", "E-commerce Tech"],
+    "linkedin": "https://linkedin.com/in/shruti-gupta-techlead"
+  }
+]
+
+
+

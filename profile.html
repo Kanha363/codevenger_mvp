@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="profile-title">Profile | Loading...</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS STYLES (NO CHANGE) */
+        :root {
+            --color-primary: #5D4037; --color-secondary: #A1887F; --color-background: #F8F7F3; --color-card-bg: #FFFFFF;
+            --color-text-dark: #3E2723; --color-text-light: #FFFFFF; --color-border: #D1C4E9; --color-line-accent: #3E2723;
+            --color-tag-bg: #EFEBE9; --color-accent-green: #38761d;
+            --color-accent-blue: #007bff; /* Added for Student status */
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: var(--color-text-dark); background-color: var(--color-background); min-height: 100vh; display: flex; flex-direction: column; }
+        a { text-decoration: none; color: var(--color-primary); transition: color 0.3s ease; }
+        .btn { display: inline-block; padding: 8px 18px; border-radius: 5px; font-weight: 600; cursor: pointer; text-align: center; transition: background-color 0.3s ease, color 0.3s ease; border: 2px solid var(--color-primary); margin-right: 10px; }
+        .btn-primary { background-color: var(--color-primary); color: var(--color-text-light); }
+        .btn-secondary { background-color: var(--color-background); color: var(--color-primary); border: 2px solid var(--color-primary);}
+        .footer { background-color: var(--color-text-dark); color: var(--color-secondary); text-align: center; padding: 15px; font-size: 0.85rem; margin-top: 50px; }
+        main { flex-grow: 1; }
+
+        /* UNIQUE MINIMALIST LAYOUT STYLES */
+        .profile-wrapper { max-width: 800px; margin: 50px auto; padding: 0 15px; background-color: var(--color-card-bg); box-shadow: 0 0 15px rgba(0,0,0,0.05); border-radius: 5px; }
+        .main-content { padding: 30px; }
+        #profile-header { text-align: left; padding-bottom: 20px; margin-bottom: 30px; border-bottom: 2px solid var(--color-line-accent); }
+        .profile-photo-large {
+            width: 120px; height: 120px; 
+            background-color: var(--color-tag-bg); 
+            border-radius: 50%;
+            border: 4px solid var(--color-text-dark);
+            margin-bottom: 20px;
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #full-name { font-size: 2.5rem; margin-bottom: 5px; color: var(--color-text-dark); font-weight: 700;}
+        .tagline { font-size: 1.1rem; color: var(--color-secondary); margin-bottom: 10px; font-style: italic;}
+        .designation { font-size: 1.25rem; font-weight: 600; margin-bottom: 8px; color: var(--color-primary);}
+        .location { font-size: 0.95rem; color: var(--color-secondary); margin-bottom: 15px; display: inline-block;}
+        .mentor-info { font-size: 0.95rem; color: var(--color-accent-green); font-weight: 600; margin-top: 15px;}
+        .student-seeking-info { font-size: 0.95rem; color: var(--color-accent-blue); font-weight: 600; margin-top: 15px;} /* New style for student status */
+        .profile-section { padding: 20px 0; margin-bottom: 20px; border-top: 1px dashed var(--color-border); text-align: left; }
+        .profile-section h2 { font-size: 1.8rem; margin-bottom: 15px; color: var(--color-line-accent); font-weight: 700; }
+        .section-item { padding: 15px 0; border-bottom: 1px solid var(--color-tag-bg); }
+        .item-title { font-size: 1.1rem; color: var(--color-primary); margin-bottom: 4px; }
+        .item-description { font-size: 0.95rem; color: var(--color-text-dark); margin-top: 5px; }
+        .section-item small { color: var(--color-secondary); font-size: 0.85rem; margin-right: 15px; display: inline-block;}
+        .tags-container { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+        .skill-tag { background-color: var(--color-tag-bg); color: var(--color-text-dark); padding: 8px 14px; border-radius: 20px; font-size: 0.9rem; font-weight: 500; border: 1px solid var(--color-secondary); }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="profile-wrapper">
+            <div class="main-content">
+                
+                <div id="profile-header">
+                    <div class="profile-photo-large"></div> 
+                    
+                    <h1 id="full-name">Loading Profile...</h1>
+                    <p class="tagline" id="tagline-bio"></p>
+                    <p class="designation" id="full-designation"></p>
+                    <p class="location" id="full-location"></p>
+                    <p class="location" id="full-batch-major"></p>
+                    
+                    <div style="margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
+                        <a href="#" id="linkedin-link" target="_blank" class="btn btn-primary btn-small">Connect</a>
+                        <a href="#" id="linkedin-link" target="_blank" class="btn btn-primary btn-small">Message</a>
+                        <a href="#" id="email-link" class="btn btn-secondary btn-small">Message</a>
+                        <p id="mentor-status" class="mentor-info"></p> 
+                    </div>
+                </div>
+
+                <div class="profile-section" id="about-card">
+                    <h2>About</h2>
+                    <p id="about-section">Loading detailed biography...</p>
+                </div>
+                
+                <div class="profile-section">
+                    <h2>Skills</h2>
+                    <div id="skills-container" class="tags-container"></div>
+                </div>
+                
+                <div class="profile-section">
+                    <h2>Education</h2>
+                    <div id="education-list"></div>
+                </div>
+                
+                <div class="profile-section" id="experience-section"> <h2>Experience</h2>
+                    <div id="experience-list"></div>
+                </div>
+                
+                <div class="profile-section" id="projects-section"> <h2>Projects & Portfolio</h2>
+                    <div id="projects-list"></div>
+                </div>
+                
+            </div>
+        </div> 
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Alumni Connect. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        // ==========================================================
+        // JAVASCRIPT LOGIC (DATA LOADING)
+        // ==========================================================
+
+        function getProfileIdFromUrl() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('id');
+        }
+
+        
+        // NEW FUNCTION: Determine if it's a student profile
+        function getProfileTypeFromUrl() {
+            const urlParams = new URLSearchParams(window.location.search);
+            // Default to 'alumni' if type is not specified or unknown
+            return urlParams.get('type') === 'student' ? 'student' : 'alumni'; 
+        }
+
+        function renderDetailedList(containerId, items, type) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = '';
+            
+            if (items && Array.isArray(items) && items.length > 0) {
+                items.forEach(item => {
+                    const itemDiv = document.createElement('div');
+                    itemDiv.classList.add('section-item');
+                    let htmlContent = '';
+                    
+                    if (type === 'experience') {
+                        htmlContent = `
+                            <p class="item-title"><strong>${item.title}</strong> at ${item.company}</p>
+                            <small class="item-duration">${item.duration} | ${item.location || 'N/A'}</small>
+                            ${item.description ? `<p class="item-description">${item.description}</p>` : ''}
+                        `;
+                    } else if (type === 'education') {
+                         htmlContent = `
+                            <p class="item-title"><strong>${item.degree}</strong> in ${item.major || item.degree}, ${item.institution}</p>
+                            <small class="item-duration">${item.duration}</small>
+                            ${item.grade ? `<small class="item-grade">Grade: ${item.grade}</small>` : ''}
+                            ${item.thesis_title ? `<p class="item-description">Thesis: ${item.thesis_title}</p>` : ''}
+                        `;
+                    }
+                    
+                    itemDiv.innerHTML = htmlContent;
+                    container.appendChild(itemDiv);
+                });
+            } else {
+                container.innerHTML = '<div class="section-item"><p>No detailed information available.</p></div>';
+            }
+        }
+        
+
+        function renderProjects(projects) {
+            const container = document.getElementById('projects-list');
+            container.innerHTML = '';
+            if (projects && projects.length > 0) {
+                projects.forEach(project => {
+                    const itemDiv = document.createElement('div');
+                    itemDiv.classList.add('section-item');
+                    
+                    itemDiv.innerHTML = `
+                        <p class="item-title">
+                            <strong>${project.title}</strong> 
+                            ${project.link ? `<a href="${project.link}" target="_blank">(View Link)</a>` : ''}
+                        </p>
+                        <small class="item-duration">Year: ${project.year}</small>
+                        <p class="item-description">${project.description}</p>
+                    `;
+                    container.appendChild(itemDiv);
+                });
+            } else {
+                container.innerHTML = '<div class="section-item"><p>No projects or portfolio items listed.</p></div>';
+            }
+        }
+        
+        function renderSkills(skills) {
+            const container = document.getElementById('skills-container');
+            container.innerHTML = '';
+            if (skills && Array.isArray(skills) && skills.length > 0) {
+                container.innerHTML = skills.map(skill => 
+                    `<span class="skill-tag">${skill.name} (${skill.proficiency})</span>`
+                ).join('');
+            } else {
+                container.innerHTML = '<p>No skills listed.</p>';
+            }
+        }
+
+        // NEW FUNCTION: Renders the profile data for both Alumni and Student
+        function renderProfile(data, type) {
+            const mentorStatusElement = document.getElementById('mentor-status');
+            const profileImageElement = document.querySelector('.profile-photo-large');
+            
+            // 1. Header Data
+            document.getElementById('profile-title').textContent = `${data.name} | ${type === 'alumni' ? 'Alumni' : 'Student'} Profile`;
+            document.getElementById('full-name').textContent = data.name + (data.is_verified ? ' ✅' : '');
+            document.getElementById('tagline-bio').textContent = data.tagline || '';
+            document.getElementById('full-location').textContent = `${data.city || 'N/A'}, ${data.country || 'N/A'}`;
+            document.getElementById('about-section').textContent = data.about || 'No detailed biography available.';
+
+            // 2. Type-Specific Header
+            if (type === 'alumni') {
+                document.getElementById('full-designation').textContent = data.designation;
+                document.getElementById('full-batch-major').textContent = `${data.degree} ${data.major}, Batch of ${data.batch}`;
+            } else { // Student
+                document.getElementById('full-designation').textContent = `${data.current_year} of ${data.degree}`;
+                document.getElementById('full-batch-major').textContent = `${data.major} Major (Expected Grad: ${data.expected_graduation || 'N/A'})`;
+            }
+
+            // 3. Profile Image
+            if (data.Profile_image) {
+                profileImageElement.style.backgroundImage = `url(${data.Profile_image})`;
+            } else {
+                profileImageElement.style.backgroundColor = '#ccc';
+            }
+            
+            // 4. Detailed Sections
+            renderSkills(data.skills);
+            renderProjects(data.projects);
+            renderDetailedList('education-list', data.education, 'education');
+
+            // 5. Conditional Sections (Alumni has Experience, Student might not)
+            const experienceSection = document.getElementById('experience-section');
+            if (type === 'alumni') {
+                experienceSection.style.display = 'block';
+                renderDetailedList('experience-list', data.experience, 'experience');
+            } else {
+                experienceSection.style.display = 'none'; // Hide experience section for students
+            }
+
+            // 6. Links and Status
+            const linkedinLink = document.getElementById('linkedin-link');
+            const emailLink = document.getElementById('email-link');
+            
+            linkedinLink.href = data.linkedin || '#';
+            linkedinLink.style.display = data.linkedin ? 'inline-block' : 'none';
+            
+            emailLink.href = `mailto:${data.email_public}`; // Assuming students and alumni have this field if they want public email
+            emailLink.style.display = data.email_public ? 'inline-block' : 'none';
+
+            mentorStatusElement.classList.remove('mentor-info', 'student-seeking-info'); // Clear previous styles
+
+            if (type === 'alumni') {
+                if (data.mentorship_available) {
+                    mentorStatusElement.classList.add('mentor-info');
+                    mentorStatusElement.innerHTML = `✅ Open for Mentorship: ${data.mentor_topics.join(', ')}`;
+                } else {
+                    mentorStatusElement.textContent = 'Not currently open for mentorship.';
+                }
+            } else { // Student
+                if (data.seeking_help) {
+                    mentorStatusElement.classList.add('student-seeking-info');
+                    mentorStatusElement.innerHTML = `⭐ Seeking Guidance: ${data.help_topics.join(', ')}`;
+                } else {
+                    mentorStatusElement.classList.add('mentor-info');
+                    mentorStatusElement.textContent = 'Not currently seeking guidance, focusing on studies.';
+                }
+            }
+        }
+
+
+        // MAIN DATA LOADING FUNCTION
+        async function loadProfileDetails() {
+            const profileId = getProfileIdFromUrl();
+            const profileType = getProfileTypeFromUrl();
+            const mainContent = document.querySelector('.main-content');
+            
+            if (!profileId) { 
+                mainContent.innerHTML = '<div class="error-message"><h1>Error</h1><p>Profile ID not found. Please check the link.</p></div>';
+                return; 
+            }
+
+            // Determine which JSON file to fetch
+            const jsonFile = profileType === 'student' ? 'studentdata.json' : 'alumnidata.json';
+            
+            try {
+                const response = await fetch(jsonFile); 
+                
+                if (!response.ok) {
+                     throw new Error(`JSON load failed for ${jsonFile} with status: ` + response.status);
+                }
+                
+                const profileData = await response.json();
+                const profile = profileData.find(item => item.id === profileId);
+
+                if (profile) {
+                    renderProfile(profile, profileType);
+                } else {
+                    mainContent.innerHTML = `<div class="error-message"><h1>Profile Not Found</h1><p>We couldn't find a ${profileType} profile for the ID: ${profileId} in ${jsonFile}.</p></div>`;
+                }
+
+            } catch (error) {
+                console.error("Error loading profile details:", error);
+                mainContent.innerHTML = '<div class="error-message"><h1>Data Loading Error</h1><p>Sorry, there was an issue connecting to the data. Check the browser console for details.</p></div>';
+            }
+        }
+
+        // Call the function on page load
+        loadProfileDetails();
+    </script>
+</body>
+</html>

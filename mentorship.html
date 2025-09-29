@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mentorship Matching</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #EFEBE9;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    .mentorship-section {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .mentorship-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .mentorship-form label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .mentorship-form input,
+    .mentorship-form select {
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .match-btn {
+      background-color: #3E2723;
+      color: white;
+      padding: 0.8rem 1.2rem;
+      border: none;
+      border-radius: 50px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .match-btn:hover {
+      background-color: #5D4037;
+    }
+  </style>
+</head>
+<body>
+  <section class="mentorship-section">
+    <h2>Find a Mentor</h2>
+    <form class="mentorship-form">
+      <label for="domain">Choose Domain:</label>
+      <select id="domain" name="domain">
+        <option value="tech">Tech</option>
+        <option value="finance">Finance</option>
+        <option value="design">Design</option>
+        <option value="academia">Academia</option>
+      </select>
+
+      <label for="location">Preferred Location:</label>
+      <input type="text" id="location" name="location" placeholder="e.g., Delhi, Mumbai" />
+
+      <label for="availability">Availability:</label>
+      <select id="availability" name="availability">
+        <option value="weekdays">Weekdays</option>
+        <option value="weekends">Weekends</option>
+        <option value="flexible">Flexible</option>
+      </select>
+
+      <button type="submit" class="match-btn">Match Me</button>
+    </form>
+  </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schedule a Session</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #EFEBE9;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    .schedule-section {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .schedule-section h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+
+    .schedule-form {
+      display: flex;
+      flex-direction:column;
+      gap: 1rem;
+    }
+
+    .schedule-form label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .schedule-form input,
+    .schedule-form select {
+      padding: 0.7rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+
+    .schedule-btn {
+      background-color: #3E2723;
+      color: white;
+      padding:0.8rem 1.2rem;
+      border: none;
+      border-radius:50px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .schedule-btn:hover {
+      background-color:#392823;
+    }
+  </style>
+</head>
+<body>
+  <section class="schedule-section">
+    <h2>Schedule a Mentorship Session</h2>
+    <form class="schedule-form">
+      <label for="mentor">Select Mentor:</label>
+      <input type="text" id="mentor" name="mentor" placeholder="Mentor's Name or ID" />
+
+      <label for="session-type">Session Type:</label>
+      <select id="session-type" name="session-type">
+        <option value="career">Career Guidance</option>
+        <option value="interview">Mock Interview</option>
+        <option value="resume">Resume Review</option>
+        <option value="general">General Mentorship</option>
+      </select>
+
+      <label for="date">Choose Date:</label>
+      <input type="date" id="date" name="date" />
+
+      <label for="time">Choose Time:</label>
+      <input type="time" id="time" name="time" />
+
+      <button type="submit" class="schedule-btn">Book Session</button>
+    </form>
+  </section>
+</body>
+</html>
